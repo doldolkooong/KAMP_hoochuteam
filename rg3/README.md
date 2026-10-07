@@ -1,5 +1,7 @@
 # RG3 제조 불량 Risk Ranking 모델
 
+기준 모델부터 데이터·목표 변경과 딥러닝 실험까지의 과정은 [`notebooks/experiments/`](notebooks/experiments/) 및 [`notebooks/research/`](notebooks/research/)에 원본 출력과 함께 보존했습니다. 원래 파일명과 위치는 [전체 노트북 목록](../docs/notebook_inventory.md)을 참고하세요.
+
 KAMP 사출성형 제조데이터 중 **RG3 생산데이터의 불량 위험도를 분석하고 검사 우선순위를 지원하기 위한 머신러닝 모델**입니다.
 
 RG3에서는 전체 불량이 RH에서만 관찰되었습니다.

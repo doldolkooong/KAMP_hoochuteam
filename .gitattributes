@@ -1,0 +1,2 @@
+# Preserve historical notebook snapshots byte-for-byte, including outputs.
+*.ipynb -text -diff

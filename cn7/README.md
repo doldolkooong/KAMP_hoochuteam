@@ -1,5 +1,7 @@
 # CN7 제조 품질위험 예측 + OOD 안전계층
 
+초기 모델·특징·불균형 처리 실험과 재분석 과정은 [`notebooks/experiments/`](notebooks/experiments/) 및 [`notebooks/research/`](notebooks/research/)에 원본 출력과 함께 보존했습니다. 원래 파일명과 위치는 [전체 노트북 목록](../docs/notebook_inventory.md)을 참고하세요.
+
 KAMP 사출성형 제조데이터의 **CN7 공정 품질위험을 예측하고 검사 우선순위를 지원**하기 위한 프로젝트입니다.
 
 최종 구조는 단일 분류기만 사용하지 않습니다.
