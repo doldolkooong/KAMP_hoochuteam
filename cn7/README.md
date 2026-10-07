@@ -42,18 +42,18 @@ KAMP 사출성형 제조데이터의 **CN7 공정 품질위험을 예측하고 �
 | OOD Calibration | 과거 정상 Cycle의 시간순 후반 20% |
 | OOD Threshold | Calibration score 99 percentile |
 
-최종 분석 노트북의 반복 Group-OOF 결과:
+현재 `run_cn7.py`가 생성한 `outputs/cn7_metrics.csv`의 반복 Group-OOF 결과:
 
 ```text
-PR-AUC = 0.8157 ± 0.0139
+PR-AUC = 0.8164 ± 0.0181
 ```
 
-개발 OOF 정책 Simulation:
+현재 파이프라인의 개발 OOF 정책 결과:
 
 | 정책 | Precision | Recall | FN | 검사율 |
 |---|---:|---:|---:|---:|
-| Risk Only | 63.64% | 82.35% | 3 | 1.82% |
-| Risk + Uncertainty | 64.00% | 94.12% | 1 | 2.06% |
+| Risk Only | 66.67% | 82.35% | 3 | 1.73% |
+| Risk + Uncertainty | 60.00% | 88.24% | 2 | 2.06% |
 
 **위 수치는 개발 데이터 내부 OOF 결과이며 미래 생산성능이 아닙니다.**
 
