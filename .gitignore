@@ -1,1 +1,63 @@
-build/data
+# Local environments and Python/Jupyter caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+catboost_info/
+build/
+dist/
+.env
+.env.*
+
+# Raw and generated data (keep directory markers)
+data/raw/*
+!data/raw/.gitkeep
+cn7/data/raw/*
+!cn7/data/raw/.gitkeep
+rg3/data/raw/*
+!rg3/data/raw/.gitkeep
+**/data/processed/*
+!**/data/processed/.gitkeep
+
+# Generated outputs and local experiment logs
+**/outputs/*
+!**/outputs/.gitkeep
+!**/outputs/*metrics.csv
+!**/outputs/*summary.csv
+!**/outputs/*results.csv
+!**/outputs/*validation.csv
+**/runs/
+**/logs/
+*.log
+*.tmp
+*.bak
+~$*
+
+# Large source archives and serialized temporary models
+**/models/*
+!**/models/.gitkeep
+!cn7/models/cn7_lgbm_seed100.pkl
+!cn7/models/cn7_lgbm_seed1234.pkl
+!cn7/models/cn7_lgbm_seed2026.pkl
+!cn7/models/cn7_lgbm_seed42.pkl
+!cn7/models/cn7_lgbm_seed777.pkl
+!cn7/models/cn7_pca_ood.pkl
+!rg3/models/rg3_xgb_final.pkl
+*.zip
+*.7z
+*.tar
+*.gz
+*.pt
+*.pth
+*.ckpt
+*.joblib
+
+# System/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
